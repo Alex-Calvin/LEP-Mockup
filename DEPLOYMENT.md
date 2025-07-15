@@ -1,133 +1,214 @@
-# 🚀 Deployment Guide - Louisiana Educator Portal
+# Deployment Guide - Louisiana Educator Portal Mockup
 
-This guide will help you deploy your Louisiana Educator Portal to GitHub and make it accessible via GitHub Pages and GitHub Codespaces.
+This guide provides step-by-step instructions for deploying the LEP Mockup to GitHub Pages using GitHub Actions.
 
-## 📋 Prerequisites
+## 🚀 Quick Deployment
 
+### Prerequisites
 - GitHub account
 - Git installed on your local machine
-- Node.js 18+ installed
+- Node.js and npm installed
 
-## 🔧 Step 1: Create GitHub Repository
+### Step 1: Create GitHub Repository
 
-1. **Go to GitHub.com** and sign in to your account
-2. **Click "New repository"** or the "+" icon in the top right
-3. **Repository settings:**
-   - **Repository name**: `lep-mockup`
-   - **Description**: `Louisiana Educator Portal - A comprehensive web application for managing educator evaluations, roster verification, and data visualization`
-   - **Visibility**: Public (for GitHub Pages)
-   - **Initialize with**: Don't initialize (we'll push our existing code)
-4. **Click "Create repository"**
+1. Go to [GitHub](https://github.com) and sign in
+2. Click the "+" icon in the top right corner
+3. Select "New repository"
+4. Name your repository: `LEP-Mockup`
+5. Make it **Public** (required for GitHub Pages)
+6. **Do NOT** initialize with README, .gitignore, or license (we'll push our existing code)
+7. Click "Create repository"
 
-## 📤 Step 2: Push Code to GitHub
-
-Run these commands in your project directory:
+### Step 2: Push Your Code
 
 ```bash
-# Add the remote repository (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/lep-mockup.git
+# Navigate to your project directory
+cd /path/to/lep-mockup
 
-# Push to GitHub
-git branch -M main
+# Initialize git repository (if not already done)
+git init
+
+# Add all files
+git add .
+
+# Commit the changes
+git commit -m "Initial commit: LEP Mockup application"
+
+# Add the remote repository (replace YOUR_USERNAME with your GitHub username)
+git remote add origin https://github.com/YOUR_USERNAME/LEP-Mockup.git
+
+# Push to main branch
 git push -u origin main
 ```
 
-## 🌐 Step 3: Enable GitHub Pages
+### Step 3: Configure GitHub Pages
 
-1. **Go to your repository** on GitHub
-2. **Click "Settings"** tab
-3. **Scroll down to "Pages"** section
-4. **Source**: Select "Deploy from a branch"
-5. **Branch**: Select "gh-pages" (this will be created by our GitHub Action)
-6. **Folder**: Leave as "/ (root)"
-7. **Click "Save"**
+1. Go to your repository on GitHub
+2. Click on **Settings** tab
+3. Scroll down to **Pages** section (in the left sidebar)
+4. Under **Source**, select **Deploy from a branch**
+5. Under **Branch**, select **gh-pages** and **/(root)**
+6. Click **Save**
 
-## 🤖 Step 4: Enable GitHub Actions
+### Step 4: Configure GitHub Actions Permissions
 
-The GitHub Actions workflow is already configured in `.github/workflows/deploy.yml`. It will:
+1. In your repository, go to **Settings** > **Actions** > **General**
+2. Under **Workflow permissions**, select:
+   - ✅ **Read and write permissions**
+   - ✅ **Allow GitHub Actions to create and approve pull requests**
+3. Click **Save**
 
-- Build your application when you push to main
-- Deploy to GitHub Pages automatically
-- Create the `gh-pages` branch
+### Step 5: Trigger Deployment
 
-**Your site will be available at**: `https://YOUR_USERNAME.github.io/lep-mockup/`
+The deployment will automatically trigger when you push to the main branch. To manually trigger:
 
-## 💻 Step 5: Enable GitHub Codespaces
-
-1. **Go to your repository** on GitHub
-2. **Click the green "Code" button**
-3. **Click "Codespaces" tab**
-4. **Click "Create codespace on main"**
-
-This will:
-- Create a cloud development environment
-- Install all dependencies automatically
-- Start the development server
-- Provide a URL to access your application
-
-## 🔄 Step 6: Update README Links
-
-After deployment, update the README.md file:
-
-1. **Replace** `your-username` with your actual GitHub username
-2. **Update the live demo link** to your actual GitHub Pages URL
-
-## 🎯 Step 7: Test Your Deployment
-
-### GitHub Pages
-- Visit: `https://YOUR_USERNAME.github.io/lep-mockup/`
-- Test all features: login, navigation, data visualization
-- Verify responsive design on mobile devices
-
-### GitHub Codespaces
-- Open your repository in Codespaces
-- The development server should start automatically
-- Test all functionality in the cloud environment
+1. Go to **Actions** tab in your repository
+2. Click on **Deploy to GitHub Pages** workflow
+3. Click **Run workflow** button
+4. Select **main** branch
+5. Click **Run workflow**
 
 ## 🔧 Troubleshooting
 
-### GitHub Pages Not Working
-- Check if the `gh-pages` branch was created
-- Verify the GitHub Action ran successfully
-- Check repository settings for Pages configuration
+### Common Issues
 
-### Codespaces Issues
-- Ensure the `.devcontainer/devcontainer.json` file is present
-- Check if Node.js 18+ is available in the container
-- Verify port forwarding is working
+#### 1. Permission Denied Error (403)
+**Error**: `remote: Permission to USERNAME/REPO.git denied to github-actions[bot]`
 
-### Build Errors
-- Check the GitHub Actions logs
-- Ensure all dependencies are in `package.json`
-- Verify the build command works locally
+**Solution**:
+- Ensure repository is **Public**
+- Check Actions permissions in Settings > Actions > General
+- Verify workflow has correct permissions (already configured in our workflow)
 
-## 📱 Sharing Your Application
+#### 2. Build Fails
+**Error**: Build step fails with npm errors
 
-### For Job Applications
-- **GitHub Repository**: `https://github.com/YOUR_USERNAME/lep-mockup`
-- **Live Demo**: `https://YOUR_USERNAME.github.io/lep-mockup/`
-- **Codespaces**: One-click development environment
+**Solution**:
+- Check that all dependencies are in `package.json`
+- Ensure Node.js version is compatible (we use v18)
+- Verify all import statements are correct
 
-### For Portfolio
-- Include screenshots of key features
-- Highlight the responsive design
-- Mention the modern tech stack (React, Vite, Tailwind CSS)
+#### 3. Pages Not Updating
+**Issue**: Changes pushed but GitHub Pages not reflecting updates
 
-## 🎉 Success!
+**Solution**:
+- Wait 2-5 minutes for deployment to complete
+- Check Actions tab for deployment status
+- Verify gh-pages branch was created and updated
+- Clear browser cache
 
-Your Louisiana Educator Portal is now:
-- ✅ Hosted on GitHub
-- ✅ Deployed to GitHub Pages
-- ✅ Available via GitHub Codespaces
-- ✅ Accessible to anyone with the link
-- ✅ Ready for job applications and portfolio
+#### 4. 404 Errors on GitHub Pages
+**Issue**: Pages load but show 404 for routes
 
-## 🔗 Quick Links
+**Solution**:
+- This is expected for React Router - GitHub Pages doesn't support client-side routing by default
+- Our Vite config includes base path configuration for GitHub Pages
+- Users should navigate from the home page, not directly to routes
 
-- **Repository**: `https://github.com/YOUR_USERNAME/lep-mockup`
-- **Live Demo**: `https://YOUR_USERNAME.github.io/lep-mockup/`
-- **Codespaces**: Click "Code" → "Codespaces" → "Create codespace on main"
+### Manual Deployment (Alternative)
+
+If GitHub Actions fails, you can deploy manually:
+
+```bash
+# Build the project
+npm run build
+
+# Install gh-pages package
+npm install --save-dev gh-pages
+
+# Add deploy script to package.json
+# "deploy": "gh-pages -d dist"
+
+# Deploy
+npm run deploy
+```
+
+## 📋 Repository Settings Checklist
+
+Before deployment, ensure these settings are configured:
+
+### ✅ Repository Settings
+- [ ] Repository is **Public**
+- [ ] GitHub Pages enabled (Settings > Pages)
+- [ ] Source: Deploy from a branch
+- [ ] Branch: `gh-pages`
+- [ ] Folder: `/ (root)`
+
+### ✅ Actions Settings
+- [ ] Actions enabled (Settings > Actions > General)
+- [ ] Workflow permissions: Read and write
+- [ ] Allow GitHub Actions to create and approve pull requests
+
+### ✅ Code Settings
+- [ ] All files committed and pushed
+- [ ] No build errors in local development
+- [ ] Vite config includes base path for GitHub Pages
+
+## 🌐 Post-Deployment
+
+### Accessing Your Application
+
+Once deployed, your application will be available at:
+```
+https://YOUR_USERNAME.github.io/LEP-Mockup/
+```
+
+### Updating the Application
+
+To update your deployed application:
+
+1. Make changes to your code
+2. Commit and push to main branch:
+```bash
+git add .
+git commit -m "Update: description of changes"
+git push origin main
+```
+3. GitHub Actions will automatically rebuild and deploy
+
+### Monitoring Deployments
+
+- Check **Actions** tab to monitor deployment progress
+- View deployment logs for any errors
+- Verify gh-pages branch is updated with latest build
+
+## 🔒 Security Considerations
+
+### For Production Use
+
+If you plan to use this in production:
+
+1. **Environment Variables**: Move sensitive data to environment variables
+2. **API Keys**: Never commit API keys to the repository
+3. **Authentication**: Implement proper authentication system
+4. **HTTPS**: GitHub Pages provides HTTPS by default
+5. **CORS**: Configure CORS if connecting to external APIs
+
+### Current Mockup Status
+
+This application is currently a **mockup/demo** with:
+- Mock data (no real database connection)
+- Simulated authentication
+- Demo functionality only
+
+## 📞 Support
+
+If you encounter issues:
+
+1. Check the **Actions** tab for detailed error logs
+2. Verify all settings match the checklist above
+3. Try the manual deployment method
+4. Open an issue on GitHub with error details
+
+## 🎯 Next Steps
+
+After successful deployment:
+
+1. **Test the Application**: Verify all features work correctly
+2. **Share the URL**: Use the GitHub Pages URL for demos or portfolios
+3. **Customize**: Modify colors, content, or functionality as needed
+4. **Add Features**: Extend the application with additional modules
 
 ---
 
-**Note**: Remember to replace `YOUR_USERNAME` with your actual GitHub username throughout this guide. 
+**Note**: This deployment guide is specifically for GitHub Pages. For other hosting platforms (Netlify, Vercel, etc.), refer to their respective documentation. 
