@@ -1,0 +1,761 @@
+{
+  "districts": [
+    {
+      "id": "EBR",
+      "name": "East Baton Rouge Parish",
+      "code": "001",
+      "superintendent": "Dr. Sito Narcisse",
+      "contactEmail": "info@ebrschools.org",
+      "contactPhone": "(225) 922-5400",
+      "totalSchools": 87,
+      "totalTeachers": 2847,
+      "totalStudents": 41520,
+      "schools": [
+        {
+          "id": "BRHS",
+          "name": "Baton Rouge High School",
+          "code": "001",
+          "address": "2825 Government St, Baton Rouge, LA 70806",
+          "phone": "(225) 922-5400",
+          "principal": "Dr. Michael Gaudet",
+          "totalTeachers": 145,
+          "verifiedTeachers": 138,
+          "totalCourses": 456,
+          "verifiedCourses": 442,
+          "totalStudents": 2150,
+          "teachers": [
+            {
+              "id": "T001",
+              "firstName": "Maria",
+              "lastName": "Rodriguez",
+              "staffId": "BRHS001",
+              "email": "maria.rodriguez@ebrschools.org",
+              "phone": "(225) 555-0123",
+              "position": "Mathematics Teacher",
+              "certifications": ["Mathematics 6-12", "Principal"],
+              "yearsOfService": 8,
+              "hireDate": "2016-08-15",
+              "status": "Active",
+              "courses": [
+                {
+                  "id": "C001",
+                  "courseCode": "160378",
+                  "courseName": "MATHEMATICS; 7TH AND 8TH GRADES DEPT.",
+                  "sectionNumber": "01",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": false,
+                  "verifiedDate": null,
+                  "verifyingEducator": null,
+                  "students": [
+                    {
+                      "id": "S001",
+                      "firstName": "J",
+                      "lastName": "BOU",
+                      "birthDay": "15",
+                      "lasid": "123456789",
+                      "gradeLevel": "7",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 3
+                    },
+                    {
+                      "id": "S002",
+                      "firstName": "A",
+                      "lastName": "JOH",
+                      "birthDay": "22",
+                      "lasid": "123456790",
+                      "gradeLevel": "7",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "C002",
+                  "courseCode": "160380",
+                  "courseName": "ALGEBRA I; 6TH, 7TH, 8TH DEPT.",
+                  "sectionNumber": "02",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": true,
+                  "verifiedDate": "2025-01-15",
+                  "verifyingEducator": "Maria Rodriguez",
+                  "students": [
+                    {
+                      "id": "S003",
+                      "firstName": "M",
+                      "lastName": "DAV",
+                      "birthDay": "08",
+                      "lasid": "123456791",
+                      "gradeLevel": "8",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "T002",
+              "firstName": "James",
+              "lastName": "Wilson",
+              "staffId": "BRHS002",
+              "email": "james.wilson@ebrschools.org",
+              "phone": "(225) 555-0124",
+              "position": "Science Teacher",
+              "certifications": ["Science 6-12"],
+              "yearsOfService": 12,
+              "hireDate": "2012-08-15",
+              "status": "Active",
+              "courses": [
+                {
+                  "id": "C003",
+                  "courseCode": "160377",
+                  "courseName": "GRADE 7 MATH-ADVANCED COURSE",
+                  "sectionNumber": "01",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": false,
+                  "verifiedDate": null,
+                  "verifyingEducator": null,
+                  "students": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "BRMS",
+          "name": "Baton Rouge Magnet High School",
+          "code": "002",
+          "address": "2825 Government St, Baton Rouge, LA 70806",
+          "phone": "(225) 922-5401",
+          "principal": "Dr. Nanette McCann",
+          "totalTeachers": 152,
+          "verifiedTeachers": 145,
+          "totalCourses": 478,
+          "verifiedCourses": 465,
+          "totalStudents": 2280,
+          "teachers": [
+            {
+              "id": "T003",
+              "firstName": "Sarah",
+              "lastName": "Johnson",
+              "staffId": "BRMS001",
+              "email": "sarah.johnson@ebrschools.org",
+              "phone": "(225) 555-0125",
+              "position": "English Teacher",
+              "certifications": ["English 6-12"],
+              "yearsOfService": 5,
+              "hireDate": "2019-08-15",
+              "status": "Active",
+              "courses": [
+                {
+                  "id": "C004",
+                  "courseCode": "160361",
+                  "courseName": "NOCCA INTEGRATED MATHEMATICS I",
+                  "sectionNumber": "01",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": true,
+                  "verifiedDate": "2025-01-10",
+                  "verifyingEducator": "Sarah Johnson",
+                  "students": [
+                    {
+                      "id": "S004",
+                      "firstName": "L",
+                      "lastName": "GAR",
+                      "birthDay": "12",
+                      "lasid": "123456792",
+                      "gradeLevel": "9",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JP",
+      "name": "Jefferson Parish",
+      "code": "002",
+      "superintendent": "Dr. James Gray",
+      "contactEmail": "info@jpschools.org",
+      "contactPhone": "(504) 349-7600",
+      "totalSchools": 72,
+      "totalTeachers": 2340,
+      "totalStudents": 34200,
+      "schools": [
+        {
+          "id": "JHS",
+          "name": "Jefferson High School",
+          "code": "001",
+          "address": "4400 Jefferson Hwy, Jefferson, LA 70121",
+          "phone": "(504) 349-7601",
+          "principal": "Dr. Robert Taylor",
+          "totalTeachers": 138,
+          "verifiedTeachers": 132,
+          "totalCourses": 434,
+          "verifiedCourses": 418,
+          "totalStudents": 1950,
+          "teachers": [
+            {
+              "id": "T004",
+              "firstName": "Michael",
+              "lastName": "Davis",
+              "staffId": "JHS001",
+              "email": "michael.davis@jpschools.org",
+              "phone": "(504) 555-0126",
+              "position": "History Teacher",
+              "certifications": ["Social Studies 6-12"],
+              "yearsOfService": 14,
+              "hireDate": "2010-08-15",
+              "status": "Active",
+              "courses": [
+                {
+                  "id": "C005",
+                  "courseCode": "160362",
+                  "courseName": "NOCCA INTEGRATED MATHEMATICS II",
+                  "sectionNumber": "01",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": false,
+                  "verifiedDate": null,
+                  "verifyingEducator": null,
+                  "students": [
+                    {
+                      "id": "S005",
+                      "firstName": "R",
+                      "lastName": "TAY",
+                      "birthDay": "19",
+                      "lasid": "123456793",
+                      "gradeLevel": "10",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CP",
+      "name": "Caddo Parish",
+      "code": "003",
+      "superintendent": "Dr. Lamar Goree",
+      "contactEmail": "info@caddoschools.org",
+      "contactPhone": "(318) 603-6300",
+      "totalSchools": 65,
+      "totalTeachers": 1980,
+      "totalStudents": 28900,
+      "schools": [
+        {
+          "id": "CMH",
+          "name": "Caddo Magnet High",
+          "code": "001",
+          "address": "1601 Viking Dr, Shreveport, LA 71101",
+          "phone": "(318) 603-6301",
+          "principal": "Dr. Mary Harris",
+          "totalTeachers": 142,
+          "verifiedTeachers": 135,
+          "totalCourses": 448,
+          "verifiedCourses": 432,
+          "totalStudents": 2100,
+          "teachers": [
+            {
+              "id": "T005",
+              "firstName": "Emily",
+              "lastName": "Brown",
+              "staffId": "CMH001",
+              "email": "emily.brown@caddoschools.org",
+              "phone": "(318) 555-0127",
+              "position": "Special Education Teacher",
+              "certifications": ["Special Education K-12"],
+              "yearsOfService": 7,
+              "hireDate": "2017-08-15",
+              "status": "Active",
+              "courses": [
+                {
+                  "id": "C006",
+                  "courseCode": "900000",
+                  "courseName": "TITLE I (MATHEMATICS PULL-OUT CLASS)",
+                  "sectionNumber": "01",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": true,
+                  "verifiedDate": "2025-01-12",
+                  "verifyingEducator": "Emily Brown",
+                  "students": [
+                    {
+                      "id": "S006",
+                      "firstName": "D",
+                      "lastName": "MIL",
+                      "birthDay": "03",
+                      "lasid": "123456794",
+                      "gradeLevel": "6",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OP",
+      "name": "Orleans Parish",
+      "code": "004",
+      "superintendent": "Dr. Avis Williams",
+      "contactEmail": "info@opsb.us",
+      "contactPhone": "(504) 304-3520",
+      "totalSchools": 78,
+      "totalTeachers": 2150,
+      "totalStudents": 31200,
+      "schools": [
+        {
+          "id": "BHS",
+          "name": "Benjamin Franklin High School",
+          "code": "001",
+          "address": "2001 Leon C Simon Dr, New Orleans, LA 70122",
+          "phone": "(504) 286-2600",
+          "principal": "Dr. Patrick Widhalm",
+          "totalTeachers": 156,
+          "verifiedTeachers": 149,
+          "totalCourses": 512,
+          "verifiedCourses": 498,
+          "totalStudents": 2350,
+          "teachers": [
+            {
+              "id": "T006",
+              "firstName": "Jennifer",
+              "lastName": "Martinez",
+              "staffId": "BHS001",
+              "email": "jennifer.martinez@opsb.us",
+              "phone": "(504) 555-0128",
+              "position": "Spanish Teacher",
+              "certifications": ["Spanish 6-12", "ESL K-12"],
+              "yearsOfService": 9,
+              "hireDate": "2015-08-15",
+              "status": "Active",
+              "courses": [
+                {
+                  "id": "C007",
+                  "courseCode": "160363",
+                  "courseName": "SPANISH I",
+                  "sectionNumber": "01",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": true,
+                  "verifiedDate": "2025-01-08",
+                  "verifyingEducator": "Jennifer Martinez",
+                  "students": [
+                    {
+                      "id": "S007",
+                      "firstName": "K",
+                      "lastName": "WIL",
+                      "birthDay": "14",
+                      "lasid": "123456795",
+                      "gradeLevel": "9",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LP",
+      "name": "Lafayette Parish",
+      "code": "005",
+      "superintendent": "Dr. Francis Touchet",
+      "contactEmail": "info@lpsb.org",
+      "contactPhone": "(337) 521-7000",
+      "totalSchools": 45,
+      "totalTeachers": 1680,
+      "totalStudents": 24500,
+      "schools": [
+        {
+          "id": "LHS",
+          "name": "Lafayette High School",
+          "code": "001",
+          "address": "3000 W Congress St, Lafayette, LA 70506",
+          "phone": "(337) 521-7001",
+          "principal": "Dr. Melinda Voorhies",
+          "totalTeachers": 134,
+          "verifiedTeachers": 128,
+          "totalCourses": 412,
+          "verifiedCourses": 398,
+          "totalStudents": 1850,
+          "teachers": [
+            {
+              "id": "T007",
+              "firstName": "David",
+              "lastName": "Thompson",
+              "staffId": "LHS001",
+              "email": "david.thompson@lpsb.org",
+              "phone": "(337) 555-0129",
+              "position": "Physical Education Teacher",
+              "certifications": ["Physical Education K-12"],
+              "yearsOfService": 11,
+              "hireDate": "2013-08-15",
+              "status": "Active",
+              "courses": [
+                {
+                  "id": "C008",
+                  "courseCode": "160364",
+                  "courseName": "PHYSICAL EDUCATION",
+                  "sectionNumber": "01",
+                  "beginDate": "2024-08-15",
+                  "endDate": "2025-05-30",
+                  "verified": false,
+                  "verifiedDate": null,
+                  "verifyingEducator": null,
+                  "students": [
+                    {
+                      "id": "S008",
+                      "firstName": "T",
+                      "lastName": "BRO",
+                      "birthDay": "27",
+                      "lasid": "123456796",
+                      "gradeLevel": "10",
+                      "removed": false,
+                      "removedDate": null,
+                      "enrollmentDate": "2024-08-15",
+                      "absences": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "U001",
+      "username": "alex.calvin",
+      "email": "alex.calvin@louisiana.gov",
+      "firstName": "Alex",
+      "lastName": "Calvin",
+      "role": "Data Manager",
+      "district": "EBR",
+      "schools": ["BRHS", "BRMS"],
+      "permissions": ["view_all", "edit_all", "verify_all", "export_all"],
+      "lastLogin": "2025-01-15T10:30:00Z",
+      "status": "active"
+    },
+    {
+      "id": "U002",
+      "username": "maria.rodriguez",
+      "email": "maria.rodriguez@ebrschools.org",
+      "firstName": "Maria",
+      "lastName": "Rodriguez",
+      "role": "Teacher",
+      "district": "EBR",
+      "schools": ["BRHS"],
+      "permissions": ["view_own", "edit_own", "verify_own"],
+      "lastLogin": "2025-01-14T15:45:00Z",
+      "status": "active"
+    },
+    {
+      "id": "U003",
+      "username": "michael.gaudet",
+      "email": "michael.gaudet@ebrschools.org",
+      "firstName": "Michael",
+      "lastName": "Gaudet",
+      "role": "Principal",
+      "district": "EBR",
+      "schools": ["BRHS"],
+      "permissions": ["view_school", "edit_school", "verify_school", "export_school"],
+      "lastLogin": "2025-01-15T08:20:00Z",
+      "status": "active"
+    },
+    {
+      "id": "U004",
+      "username": "sarah.johnson",
+      "email": "sarah.johnson@ebrschools.org",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "role": "Teacher",
+      "district": "EBR",
+      "schools": ["BRMS"],
+      "permissions": ["view_own", "edit_own", "verify_own"],
+      "lastLogin": "2025-01-15T09:15:00Z",
+      "status": "active"
+    },
+    {
+      "id": "U005",
+      "username": "james.wilson",
+      "email": "james.wilson@ebrschools.org",
+      "firstName": "James",
+      "lastName": "Wilson",
+      "role": "Teacher",
+      "district": "EBR",
+      "schools": ["BRHS"],
+      "permissions": ["view_own", "edit_own", "verify_own"],
+      "lastLogin": "2025-01-14T16:30:00Z",
+      "status": "active"
+    },
+    {
+      "id": "U006",
+      "username": "nanette.mccann",
+      "email": "nanette.mccann@ebrschools.org",
+      "firstName": "Nanette",
+      "lastName": "McCann",
+      "role": "Principal",
+      "district": "EBR",
+      "schools": ["BRMS"],
+      "permissions": ["view_school", "edit_school", "verify_school", "export_school"],
+      "lastLogin": "2025-01-15T07:45:00Z",
+      "status": "active"
+    },
+    {
+      "id": "U007",
+      "username": "robert.taylor",
+      "email": "robert.taylor@jpschools.org",
+      "firstName": "Robert",
+      "lastName": "Taylor",
+      "role": "Principal",
+      "district": "JP",
+      "schools": ["JHS"],
+      "permissions": ["view_school", "edit_school", "verify_school", "export_school"],
+      "lastLogin": "2025-01-15T08:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "U008",
+      "username": "mary.harris",
+      "email": "mary.harris@caddoschools.org",
+      "firstName": "Mary",
+      "lastName": "Harris",
+      "role": "Principal",
+      "district": "CP",
+      "schools": ["CMH"],
+      "permissions": ["view_school", "edit_school", "verify_school", "export_school"],
+      "lastLogin": "2025-01-14T17:20:00Z",
+      "status": "active"
+    }
+  ],
+  "verificationPeriods": [
+    {
+      "id": "VP2025",
+      "name": "2024-2025 Roster Verification",
+      "viewOnlyStart": "2025-03-17",
+      "viewOnlyEnd": "2025-05-02",
+      "verificationStart": "2025-05-05",
+      "verificationEnd": "2026-05-30",
+      "status": "active"
+    }
+  ],
+  "courseCodes": [
+    {
+      "code": "160378",
+      "name": "MATHEMATICS; 7TH AND 8TH GRADES DEPT.",
+      "subject": "Math",
+      "gradeLevel": "4-8",
+      "vamEligible": true
+    },
+    {
+      "code": "160380",
+      "name": "ALGEBRA I; 6TH, 7TH, 8TH DEPT.",
+      "subject": "Algebra I",
+      "gradeLevel": "All grades",
+      "vamEligible": true
+    },
+    {
+      "code": "160377",
+      "name": "GRADE 7 MATH-ADVANCED COURSE",
+      "subject": "Math",
+      "gradeLevel": "4-8",
+      "vamEligible": true
+    },
+    {
+      "code": "160361",
+      "name": "NOCCA INTEGRATED MATHEMATICS I",
+      "subject": "Algebra I",
+      "gradeLevel": "All grades",
+      "vamEligible": true
+    },
+    {
+      "code": "160362",
+      "name": "NOCCA INTEGRATED MATHEMATICS II",
+      "subject": "Geometry",
+      "gradeLevel": "All grades",
+      "vamEligible": true
+    },
+    {
+      "code": "900000",
+      "name": "TITLE I (MATHEMATICS PULL-OUT CLASS)",
+      "subject": "Math",
+      "gradeLevel": "4-8",
+      "vamEligible": true
+    },
+    {
+      "code": "900010",
+      "name": "TITLE I (READING/LANGUAGE ARTS PULL-OUT CLASS)",
+      "subject": "ELA",
+      "gradeLevel": "4-8",
+      "vamEligible": true
+    },
+    {
+      "code": "900016",
+      "name": "HOSPITAL/HOMEBOUND REG ED",
+      "subject": "ELA, Math, Science",
+      "gradeLevel": "4-8",
+      "vamEligible": true
+    },
+    {
+      "code": "700011",
+      "name": "FLOATING TEACHER (ELEM.)",
+      "subject": "ELA, Math, Science",
+      "gradeLevel": "4-8",
+      "vamEligible": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "N001",
+      "userId": "U001",
+      "title": "New evaluation assigned",
+      "message": "You have been assigned to evaluate Ms. Rodriguez",
+      "time": "2025-01-15T08:30:00Z",
+      "type": "info",
+      "read": false,
+      "priority": "high"
+    },
+    {
+      "id": "N002",
+      "userId": "U001",
+      "title": "Roster verification due",
+      "message": "Complete roster verification for East Baton Rouge Parish",
+      "time": "2025-01-14T16:00:00Z",
+      "type": "warning",
+      "read": false,
+      "priority": "medium"
+    },
+    {
+      "id": "N003",
+      "userId": "U001",
+      "title": "Professional development available",
+      "message": "New training module: \"Effective Feedback Strategies\"",
+      "time": "2025-01-12T10:00:00Z",
+      "type": "success",
+      "read": true,
+      "priority": "low"
+    },
+    {
+      "id": "N004",
+      "userId": "U001",
+      "title": "System maintenance scheduled",
+      "message": "Portal will be unavailable from 2-4 AM tomorrow",
+      "time": "2025-01-08T14:00:00Z",
+      "type": "info",
+      "read": true,
+      "priority": "medium"
+    },
+    {
+      "id": "N005",
+      "userId": "U001",
+      "title": "Data export completed",
+      "message": "Your district evaluation report has been exported successfully",
+      "time": "2025-01-15T07:15:00Z",
+      "type": "success",
+      "read": false,
+      "priority": "low"
+    },
+    {
+      "id": "N006",
+      "userId": "U001",
+      "title": "Certification renewal reminder",
+      "message": "Your administrator certification expires in 30 days",
+      "time": "2025-01-14T12:00:00Z",
+      "type": "warning",
+      "read": false,
+      "priority": "high"
+    },
+    {
+      "id": "N007",
+      "userId": "U001",
+      "title": "New district added",
+      "message": "Lafayette Parish has been added to your managed districts",
+      "time": "2025-01-13T09:30:00Z",
+      "type": "info",
+      "read": true,
+      "priority": "medium"
+    },
+    {
+      "id": "N008",
+      "userId": "U001",
+      "title": "Evaluation deadline approaching",
+      "message": "5 evaluations are due within the next 7 days",
+      "time": "2025-01-12T15:45:00Z",
+      "type": "warning",
+      "read": false,
+      "priority": "high"
+    },
+    {
+      "id": "N009",
+      "userId": "U001",
+      "title": "Training completion certificate",
+      "message": "You have completed the \"Data Privacy & Security\" training module",
+      "time": "2025-01-11T11:20:00Z",
+      "type": "success",
+      "read": true,
+      "priority": "low"
+    },
+    {
+      "id": "N010",
+      "userId": "U001",
+      "title": "System update available",
+      "message": "New features have been added to the evaluation workflow",
+      "time": "2025-01-10T14:30:00Z",
+      "type": "info",
+      "read": true,
+      "priority": "low"
+    }
+  ],
+  "systemSettings": {
+    "currentPeriod": "verification",
+    "lastDataRefresh": "2025-01-15T06:00:00Z",
+    "edlinkIntegration": {
+      "enabled": true,
+      "lastSync": "2025-01-15T05:30:00Z",
+      "nextSync": "2025-01-16T05:30:00Z"
+    },
+    "exportSettings": {
+      "defaultFormat": "CSV",
+      "includeHeaders": true,
+      "dateFormat": "MM/DD/YYYY"
+    }
+  }
+} 
